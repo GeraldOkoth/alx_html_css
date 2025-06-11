@@ -188,7 +188,7 @@ h6 {
 }
 
 @media (max-width: 800px) {
-  body.works_on_smartphone {
+  body .works_on_smartphone {
   	display: block;
   }
   body.works_on_smartphone main {
