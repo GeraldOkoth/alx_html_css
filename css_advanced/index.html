@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smile School</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4a2b055604.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html"
-          ><img src="./assets/images/logo.png" alt="logo"
+          ><img src="./assets/images/logo.png" class="logo" alt="logo"
         /></a>
         <ul>
           <li><a href="#">COURSES</a></li>
@@ -21,18 +25,18 @@
     </header>
     <main>
       <section class="hero" id="hero">
-        <div class="hero-content">
+        <div class="hero-content-top">
           <h1>Get Schooled</h1>
-          <div>
+          <div class="s-g-l">
             <span>SMILES</span>
             <span>GRIN</span>
             <span>LOUGH</span>
           </div>
           <button>REGISTER FOR FREE</button>
         </div>
-        <div>
-          <h2 class="learn-frm-pros"><span>Learn</span> from the pros</h2>
-          <div class="hero-image-pros">
+        <div class="hero-content-bottom">
+          <h3 class="learn-frm-pros"><span>Learn</span> from the pros</h3>
+          <div class="hero-pros">
             <div>
               <img
                 src="./assets/images/phillip_massey.png"
@@ -98,13 +102,15 @@
       </section>
       <section class="testimonials" id="testimonials">
         <div class="testimonial-content">
-          <img
-            src="./assets/images/person_name.png"
-            width="130px"
-            height="130px"
-            alt="Persona Name, a weather presenter"
-          />
-          <div>
+          <div class="avatar">
+            <img
+              src="./assets/images/person_name.png"
+              width="130px"
+              height="130px"
+              alt="Persona Name, a weather presenter"
+            />
+          </div>
+          <div class="testimonial-text">
             <blockquote>
               « Those tutorials are consice and go straight to the point. I
               can't think of a better place to learn smiling. And it's so fun!
@@ -117,33 +123,34 @@
       <section class="most-popular-tutorials" id="most-popular-tutorials">
         <h2>Most <span>popular</span> tutorials</h2>
         <div class="tutorials-content">
-          <div>
+          <div class="tutorial">
+            <img src="./assets/images/play_btn.png" class="play-btn" alt="play button" width="50px" height="50px" />
             <img
               src="./assets/images/diagonal_smile.png"
               alt="A lady smiling with header positioned diagonally"
             />
-            <!-- <img src="./assets/images/play_btn.png" alt="play button"> -->
             <h3>Diagonal smile</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque.
             </p>
-            <div class="rating-content rater">
+            <div class="rater">
               <img
                 src="./assets/images/rating_phillip_massey.png"
                 alt="Phillip Massey rating"
               />
               <h4>Philip Massey</h4>
             </div>
-            <div class="rating-content stars-time">
+            <div class="ratings">
               <div>
                 <i class="fa-solid fa-star"
                   ><img src="./assets/images/rating.png" alt="star ratings"
                 /></i>
               </div>
-              <p class="rating-p">8 min</p>
+              <p class="rating-time-lapse">8 min</p>
             </div>
           </div>
-          <div>
+          <div class="tutorial">
+            <img src="./assets/images/play_btn.png" class="play-btn" alt="play button" width="50px" height="50px" />
             <img
               src="./assets/images/sad_smile.png"
               alt="A lady smiling with a sad face"
@@ -152,23 +159,24 @@
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque.
             </p>
-            <div class="rating-content rater">
+            <div class="rater">
               <img
                 src="./assets/images/rating_phillip_massey.png"
                 alt="Phillip Massey rating"
               />
               <h4>Philip Massey</h4>
             </div>
-            <div class="rating-content stars-time">
+            <div class="ratings">
               <div>
                 <i class="fa-solid fa-star"
                   ><img src="./assets/images/rating.png" alt="star ratings"
                 /></i>
               </div>
-              <p class="rating-p">8 min</p>
+              <p class="rating-time-lapse">8 min</p>
             </div>
           </div>
-          <div>
+          <div class="tutorial">
+            <img src="./assets/images/play_btn.png" class="play-btn" alt="play button" width="50px" height="50px" />
             <img
               src="./assets/images/natural_smile.png"
               alt="A man smiling with a natural smile"
@@ -177,24 +185,24 @@
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque.
             </p>
-            <div class="rating-content rater">
+            <div class="rater">
               <img
                 src="./assets/images/rating_phillip_massey.png"
                 alt="Phillip Massey rating"
               />
               <h4>Philip Massey</h4>
             </div>
-            <div class="rating-content stars-time">
+            <div class="ratings">
               <div>
                 <i class="fa-solid fa-star"
                   ><img src="./assets/images/rating.png" alt="star ratings"
                 /></i>
               </div>
-              <p class="rating-p">8 min</p>
+              <p class="rating-time-lapse">8 min</p>
             </div>
           </div>
-          <div>
-            <!-- <img src="./assets/images/play_btn.png" class="play-btn" alt="play button" /> -->
+          <div class="tutorial">
+            <img src="./assets/images/play_btn.png" class="play-btn" alt="play button" width="50px" height="50px" />
             <img
               src="./assets/images/happy_smile.png"
               alt="A man smiling with a happy face"
@@ -203,28 +211,28 @@
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque.
             </p>
-            <div class="rating-content rater">
+            <div class="rater">
               <img
                 src="./assets/images/rating_phillip_massey.png"
                 alt="Phillip Massey rating"
               />
               <h4>Philip Massey</h4>
             </div>
-            <div class="rating-content stars-time">
+            <div class="ratings">
               <div>
                 <i class="fa-solid fa-star"
                   ><img src="./assets/images/rating.png" alt="star ratings"
                 /></i>
               </div>
-              <p class="rating-p">8 min</p>
+              <p class="rating-time-lapse">8 min</p>
             </div>
           </div>
         </div>
       </section>
       <section class="membership" id="membership">
-        <h2><span>Free</span> membership</h2>
+        <h3><span>Free</span> membership</h3>
         <div class="membership-content">
-          <div>
+          <div class="membership-column">
             <img
               src="./assets/images/smile_membership_icon.png"
               alt="smiling icon"
@@ -232,7 +240,7 @@
             <h3>Lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
-          <div>
+          <div class="membership-column">
             <img
               src="./assets/images/smile_membership_icon.png"
               alt="smiling icon"
@@ -240,7 +248,7 @@
             <h3>Lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
-          <div>
+          <div class="membership-column">
             <img
               src="./assets/images/smile_membership_icon.png"
               alt="smiling icon"
@@ -248,7 +256,7 @@
             <h3>Lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
-          <div>
+          <div class="membership-column">
             <img
               src="./assets/images/smile_membership_icon.png"
               alt="smiling icon"
