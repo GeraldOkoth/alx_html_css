@@ -1,114 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 /* resets */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* importing fontfaces. Come back here later */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
 }
 
 :root {
-    --primary-color: #fff;
-    --secondary-color: #FF6565;
-}
-
-@font-face {
-    font-family: 'spin cycle';
-    src: url('./assets/fonts/spincycle_*');
-}
-
-@font-face {
-    font-family: 'Source Sans';
-    src: url('./assets/fonts/SourceSansPro-*');
+  --primary-color: #fff;
+  --secondary-color: #ff6565;
+  --bg-dark: #071629;
+  --max-content-width: 1000px;
+  --font-spin-cycle: "Spin Cycle OT", sans-serif;
+  --font-source-sans-pro: "Source Sans Pro", sans-serif;
 }
 
 body {
-    color: var(--primary-color);
+  color: var(--primary-color);
+  font-family: var(--font-source-sans-pro);
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  /* top: 1.2rem; */
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 14rem;
+}
+
+.hamburger {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     position: absolute;
-    /* top: 1.2rem; */
-    width: 100%;
-    z-index: 1000;
-    padding: 1rem 15rem;
+    gap: .2rem;
+    visibility: hidden;
+}
+
+.hamburger .top, .middle, .bottom {
+    width: 1.4rem;
+    height: .2rem;
+    background-color: var(--primary-color);
+} 
+
+.middle {
+    width: 1rem;
 }
 
 header .menu ul {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
 }
+
 
 header .menu ul a {
-    text-decoration: none;
-    color: var(--primary-color );
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color .3s ease-in-out;
 }
 
-header .menu ul a:hover {
-    color: #FF6565;
+header .menu ul a:hover,
+a:active {
+  color: var(--secondary-color);
 }
 
 main {
-    background-image:  url('./assets/images/headphones_hero_1.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  background-image: url("./assets/images/headphones_hero_1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .main-content {
-    width: 40%;
-    transform: translateY(40%);
+  max-width: var(--max-content-width);
+  width: 60%;
+  transform: translateY(40%);
 }
 
 .main-content .-p1 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .main-content button {
-    margin: 2.5rem 4rem;
-    color: var(--primary-color);
-    font-size: .8rem;
-    padding: .8rem 2rem;
-    background-color: #FF6565;
-    border-radius: 1.3rem;
-    border: none;
-    cursor: pointer;
+  margin: 2.5rem 4rem;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 1.3rem;
+  border: none;
+  cursor: pointer;
 }
 
-.main-content button:hover {
-    opacity: 0.9;
+.main-content button:hover,
+button:active {
+  opacity: 0.9;
 }
 
 .main-content .-p2 {
-    line-height: 1.6rem;
+  line-height: 1.6rem;
 }
 
 @media screen and (max-width: 480px) {
-    header {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-        /* flex-wrap: wrap; */
-    }
+  header {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
 
-    header .menu ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    header .menu ul a {
-        flex-wrap: nowrap;
-    }
-    .main-content {
-        width: 80%;
-        max-width: 1000px;
-        min-height: 100vh;
-        margin: 0 5rem;
-    }
+  .hamburger {
+    left: 2rem;
+    top: 1.8rem;
+    visibility: visible;
+  }
+
+  header .menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .menu ul a {
+    flex-wrap: nowrap;
+  }
+  .main-content {
+    width: 80%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 5rem;
+  }
 }
