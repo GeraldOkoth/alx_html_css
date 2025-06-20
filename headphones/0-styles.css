@@ -1,0 +1,114 @@
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #FF6565;
+}
+
+@font-face {
+    font-family: 'spin cycle';
+    src: url('./assets/fonts/spincycle_*');
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('./assets/fonts/SourceSansPro-*');
+}
+
+body {
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    /* top: 1.2rem; */
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 15rem;
+}
+
+header .menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header .menu ul a {
+    text-decoration: none;
+    color: var(--primary-color );
+}
+
+header .menu ul a:hover {
+    color: #FF6565;
+}
+
+main {
+    background-image:  url('./assets/images/headphones_hero_1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content {
+    width: 40%;
+    transform: translateY(40%);
+}
+
+.main-content .-p1 {
+    font-weight: 600;
+}
+
+.main-content button {
+    margin: 2.5rem 4rem;
+    color: var(--primary-color);
+    font-size: .8rem;
+    padding: .8rem 2rem;
+    background-color: #FF6565;
+    border-radius: 1.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content button:hover {
+    opacity: 0.9;
+}
+
+.main-content .-p2 {
+    line-height: 1.6rem;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .menu ul a {
+        flex-wrap: nowrap;
+    }
+    .main-content {
+        width: 80%;
+        max-width: 1000px;
+        min-height: 100vh;
+        margin: 0 5rem;
+    }
+}
