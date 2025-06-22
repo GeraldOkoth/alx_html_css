@@ -44,21 +44,23 @@ header {
 }
 
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    gap: .2rem;
-    visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 0.2rem;
+  visibility: hidden;
 }
 
-.hamburger .top, .middle, .bottom {
-    width: 1.4rem;
-    height: .2rem;
-    background-color: var(--primary-color);
-} 
+.hamburger .top,
+.middle,
+.bottom {
+  width: 1.4rem;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+}
 
 .middle {
-    width: 1rem;
+  width: 1rem;
 }
 
 header .menu ul {
@@ -67,11 +69,10 @@ header .menu ul {
   gap: 2rem;
 }
 
-
 header .menu ul a {
   text-decoration: none;
   color: var(--primary-color);
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 header .menu ul a:hover,
