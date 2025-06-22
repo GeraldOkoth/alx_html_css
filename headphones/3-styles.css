@@ -385,3 +385,41 @@ button:active {
   width: 100%;
   height: auto;
 }
+
+.contact {
+  padding: 2rem 5rem;
+}
+
+.contact-us-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+form input[type="text"],
+input[type="email"],
+textarea {
+  width: 50%;
+  max-width: 500px;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1px solid #979797;
+  outline: none;
+}
+
+.contact-us-content button {
+  padding: 0.8rem 2rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 1.3rem;
+  cursor: pointer;
+  margin: 1rem 0 3rem;
+}
