@@ -286,6 +286,11 @@ button:active {
 .bottom-div-content img {
   width: 50px;
   height: 50px;
+  transition: all .3s ease-in-out;
+}
+
+.bottom-div-content img:hover {
+    transform: scale(0.7);
 }
 
 @media screen and (max-width: 480px) {
@@ -357,6 +362,14 @@ button:active {
   align-items: center;
   gap: 5rem;
   margin-top: 2rem;
+}
+
+.our_results-bottom img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.our_results-bottom img:hover {
+    transform: rotate(20deg) scale(0.7);
 }
 
 @media screen and (max-width: 480px) {
